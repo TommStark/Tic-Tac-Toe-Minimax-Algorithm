@@ -1,6 +1,15 @@
+body {
+  background: #bbdef0;
+}
+
 .container {
+  height: 90vh;
   margin: 0 auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .boardContainer {
@@ -14,6 +23,7 @@
   display: grid;
   grid-template-rows: 100px 100px 100px;
   grid-template-columns: 100px 100px 100px;
+  background: #2c3d50;
 }
 
 .tile {
@@ -23,9 +33,18 @@
   align-items: center;
   justify-content: center;
   color: #fff;
+  cursor: pointer;
+  transition: .7s;
 }
+
+.tile:hover {
+  transition: .4s;
+  background: #415669;
+}
+
 .tile--winning {
-  background-color: #F1C30F;
+  background-color: #7c9eb2;
+  /* background-color: #6EEB83; */
   border: 4px solid #2c3d50;
   display: flex;
   align-items: center;
@@ -50,10 +69,17 @@
   padding: 0.3em;
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
+  cursor: pointer;
+  transition: .7s;
 }
+.resetButton:hover {
+  background: #ec6657;
+  transition: .4s;
+}
+
 .announcement {
   border: none;
-  background: #F1C30F;
+  background: #f1c30f;
   color: #fff;
   width: 300px;
   font-size: 1em;
@@ -65,4 +91,9 @@
 
 h2 {
   margin: 0;
+}
+
+p {
+  margin: 0;
+  font-size: 3em;
 }

@@ -92,8 +92,6 @@ class App extends Component {
 
   paint(index){
     if(this.state.lineWin !== null){
-      debugger
-
       let exist = this.state.lineWin.filter(i => i === index);
       console.log(exist);
       return exist.length === 1;
