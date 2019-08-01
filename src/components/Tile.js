@@ -3,12 +3,19 @@ import "../App.css"
 
 class Tile extends Component {
   tileClick(props){
-    props.updateBoard(props.loc, props.turn);
+    props.updatedBoard(props.loc, props.turn);
+    console.log(props)
   }
-
   render() {
     return (
-      <div className="tile" onClick={() => this.tileClick(this.props)}>
+      <div className={
+        !!this.props.won
+        ? 
+        "tile--winning"
+        :
+        "tile"
+      }
+       onClick={() => { this.tileClick(this.props) }}>
         <p>{this.props.value}</p>
       </div>
     )
