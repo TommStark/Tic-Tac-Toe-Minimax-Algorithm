@@ -5,6 +5,6 @@
  
 Play [Here](https://tic-tac-toe-minimax.netlify.com/)
 
-<img src="tic-tac-toc.gif">
+<img src="tic-tac-toe.gif">
 
 
